@@ -44,7 +44,7 @@ def lubohong_test(img_path, model_path, scaler_path):
 if __name__ == "__main__":
 
     arg_num = len(sys.argv)
-    model_nums = ('1', '2', '3')
+    model_nums = ('1', '2', '3', '4', '5')
 
     if arg_num == 2:
         number = str(sys.argv[1])
