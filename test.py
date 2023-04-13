@@ -9,7 +9,7 @@ def lubohong_test(img_path, model_path, scaler_path):
         """
         'train-images-idx3-ubyte.gz', 'train-labels-idx1-ubyte.gz',
         't10k-images-idx3-ubyte.gz', 't10k-labels-idx1-ubyte.gz'
-        使用前需要把上面四个文件下载到 `path` 目录下并解压
+        Before use, you need to download the above four files to the `path` directory and unzip them
         """
         labels_path = os.path.join(img_path, '%s-labels.idx1-ubyte' % kind)
         images_path = os.path.join(img_path, '%s-images.idx3-ubyte' % kind)
@@ -25,20 +25,20 @@ def lubohong_test(img_path, model_path, scaler_path):
 
     x_test, y_test = load_mnist(img_path, kind='t10k')
 
-    # 加载保存的模型
+    # Loading saved models
     svm_model = joblib.load(model_path)
     scaler = joblib.load(scaler_path)
 
     x_test = scaler.transform(x_test)
 
-    # 预测
+    # predict
     y_predict = svm_model.predict(x_test)
 
-    # 输出结果
-    print('预测值:\n', y_predict)
-    print('真实值:\n', y_test)
-    print('直接比对真实值和预测值：\n', y_test == y_predict)
-    print('准确率：\n', svm_model.score(x_test, y_test))
+    # Output results
+    print('Predicted values:\n', y_predict)
+    print('True Values:\n', y_test)
+    print('Direct comparison of true and predicted values：\n', y_test == y_predict)
+    print('Accuracy：\n', svm_model.score(x_test, y_test))
 
 
 if __name__ == "__main__":
@@ -49,19 +49,28 @@ if __name__ == "__main__":
     if arg_num == 2:
         number = str(sys.argv[1])
         if number in model_nums:
-            print("开始测试！")
+            print("Start testing!")
             lubohong_test(
                 img_path="./data/",
                 model_path="./models/svm_model%s.pkl" % number,
                 scaler_path="./models/transfer%s.pkl" % number
             )
-            print("测试完成！")
+            print("Testing completed!")
+        elif number == 'all':
+            for i in model_nums:
+                print('Start testing model svm_model%s' % i)
+                lubohong_test(
+                    img_path="./data/",
+                    model_path="./models/svm_model%s.pkl" % i,
+                    scaler_path="./models/transfer%s.pkl" % i
+                )
+                print('Model svm_model%s testing completed!' % i)
         else:
-            print('参数数值不符合格式')
-            print("参数可取范围：", model_nums)
-            print("例如，测试第一个模型的命令为：", "python test.py 1")
+            print('Parameter values do not conform to the format')
+            print("Desirable range of parameters: ", model_nums, " or run \"python test.py all\" to run all models")
+            print("For example, the command to test the first model is: ", "\"python test.py 1\"")
     else:
-        print('参数个数不符合格式')
-        print("参数可取范围：", model_nums)
-        print("例如，测试第一个模型的命令为：", "python test.py 1")
+        print('The number of parameters does not conform to the format')
+        print("Desirable range of parameters: ", model_nums, " or run \"python test.py all\" to run all models")
+        print("For example, the command to test the first model is: ", "\"python test.py 1\"")
 
