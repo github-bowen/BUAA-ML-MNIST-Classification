@@ -1,5 +1,7 @@
 # Image Classification on MNIST Dataset Using SVM
 
+[中文版](./README_zh)
+
 [TOC]
 
 ## Project Introduction
