@@ -37,8 +37,8 @@ def lubohong_test(img_path, model_path, scaler_path):
     # Output results
     print('Predicted values:\n', y_predict)
     print('True Values:\n', y_test)
-    print('Direct comparison of true and predicted values：\n', y_test == y_predict)
-    print('Accuracy：\n', svm_model.score(x_test, y_test))
+    print('Direct comparison of true and predicted values: \n', y_test == y_predict)
+    print('Accuracy:\n', svm_model.score(x_test, y_test))
 
 
 if __name__ == "__main__":

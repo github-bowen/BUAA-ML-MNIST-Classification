@@ -52,6 +52,8 @@ Among them:
 
   > Note: Since the feature values are first standardized using *StandardScaler* in the training code, the feature values of the test data also need to be standardized in the same way when testing the code, so you need to save the corresponding standardization model `transfer{i}.pkl`.
 
+  ***Because the model file is too large, only the fifth group of models is kept here!!!***
+
 - The `train` directory stores 5 groups of model training codes, all in *ipynb* format. Therefore, you need to install jupyter related dependencies to run the training code. For specific installation methods, see **Environment Configuration**.
 
 - `test.py` test code, which can be used from the command line. For specific usage methods, see below.
