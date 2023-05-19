@@ -10,11 +10,11 @@
 
 ### MNIST Classification with SVM
 
-在"MNIST Classification with SVM"文件夹中，您将找到一个作业，重点是使用支持向量机模型在MNIST数据集上进行数字分类。SVM算法旨在找到一个最佳超平面，将数据集中的不同类别分开。
+在"MNIST-Classification-with-SVM"文件夹中，您将找到一个作业，重点是使用支持向量机模型在MNIST数据集上进行数字分类。SVM算法旨在找到一个最佳超平面，将数据集中的不同类别分开。
 
 ### MNIST Classification with CNN
 
-"MNIST Classification with CNN"文件夹包含一个作业，探讨在MNIST数据集上使用卷积神经网络模型进行数字分类。CNN因其能够捕捉数据中的空间依赖关系而在图像识别任务中取得了显著的成功。
+"MNIST-Classification-with-CNN"文件夹包含一个作业，探讨在MNIST数据集上使用卷积神经网络模型进行数字分类。CNN因其能够捕捉数据中的空间依赖关系而在图像识别任务中取得了显著的成功。
 
 ## 仓库结构与使用
-可分别查看[MNIST Classification with CNN的说明文档](./MNIST classification with CNN/README.md)和[MNIST Classification with SVM的说明文档](./MNIST classification with SVM/README.md)来查看具体相关信息。
+可分别查看[MNIST Classification with CNN的说明文档](./MNIST-classification-with-CNN/README.md)和[MNIST Classification with SVM的说明文档](./MNIST-classification-with-SVM/README.md)来查看具体相关信息。

@@ -12,11 +12,11 @@ The repository is organized into two main folders, each corresponding to a speci
 
 ### MNIST Classification with SVM
 
-In the "MNIST Classification with SVM" folder, you will find an assignment that focuses on training a Support Vector Machine model for digit classification on the MNIST dataset. The SVM algorithm aims to find an optimal hyperplane that separates the different classes in the dataset.
+In the "MNIST-Classification-with-SVM" folder, you will find an assignment that focuses on training a Support Vector Machine model for digit classification on the MNIST dataset. The SVM algorithm aims to find an optimal hyperplane that separates the different classes in the dataset.
 
 ### MNIST Classification with CNN
 
-The "MNIST Classification with CNN" folder contains an assignment that explores training a Convolutional Neural Network model for digit classification on the MNIST dataset. CNNs have shown remarkable success in image recognition tasks due to their ability to capture spatial dependencies in the data.
+The "MNIST-Classification-with-CNN" folder contains an assignment that explores training a Convolutional Neural Network model for digit classification on the MNIST dataset. CNNs have shown remarkable success in image recognition tasks due to their ability to capture spatial dependencies in the data.
 
 ## Repository Structure and Usage
-For specific information, please refer to the respective README documents: [README for MNIST Classification with CNN](./MNIST classification with CNN/README.md) and [README for MNIST Classification with SVM](./MNIST classification with SVM/README.md).
+For specific information, please refer to the respective README documents: [README for MNIST Classification with CNN](./MNIST-classification-with-CNN/README.md) and [README for MNIST Classification with SVM](./MNIST-classification-with-SVM/README.md).
