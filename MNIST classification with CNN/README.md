@@ -1,5 +1,7 @@
 # Implementing MNIST Image Classification using CNN
 
+[中文版](./README_zh.md)
+
 [TOC]
 
 ## Project Introduction
