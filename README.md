@@ -2,6 +2,8 @@
 
 [中文版](./README_zh.md)
 
+[TOC]
+
 This repository contains the assignments for the "Fundamentals of Machine Learning Engineering" course at Beihang University (BUAA). The assignments involve training models using Support Vector Machines (SVM) and Convolutional Neural Networks (CNN) on the MNIST dataset.
 
 ## Dataset
