@@ -4,7 +4,7 @@
 
 [TOC]
 
-This repository contains the assignments for the "Fundamentals of Machine Learning Engineering" course at Beihang University (BUAA). The assignments involve training models using Support Vector Machines (SVM) and Convolutional Neural Networks (CNN) on the MNIST dataset.
+This repository contains two assignments from the course "Fundamentals of Machine Learning Engineering" at Beihang University (BUAA). These assignments utilize Support Vector Machines (SVM) and Convolutional Neural Networks (CNN) to train on the MNIST dataset. The SVM assignment achieved an accuracy of **97.79%**, while the CNN assignment achieved an accuracy of **99.55%**.
 
 ## Dataset
 The [MNIST dataset](http://yann.lecun.com/exdb/mnist/) is a widely used benchmark dataset in the field of machine learning. It consists of a large collection of 28x28 grayscale images of handwritten digits ranging from 0 to 9. The dataset is divided into a training set and a test set, allowing us to evaluate the performance of our models.
