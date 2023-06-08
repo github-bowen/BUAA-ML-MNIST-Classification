@@ -25,7 +25,7 @@ def test(model, test_loader, device):
 
 def lubohong_test(img_path, model_path, device):
     # load model
-    model = CNN()
+    model = CNN().to(device)
     model.load_state_dict(torch.load(model_path + 'model.pth', map_location=torch.device(device)))
 
     # load test set
